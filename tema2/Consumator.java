@@ -11,12 +11,12 @@ public class Consumator {
 	public void run() {
 		while (lista.size > 0) {
 			try {
-			consumer.acquire();
+			consumator.acquire();
 			} 
 			catch (InterruptedException e) {
 			e.printStackTrace();
 			}
-			producer.release();
+			producator.release();
             }
         }
 }
